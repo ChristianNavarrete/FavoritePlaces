@@ -13,6 +13,8 @@
 		A9A924741AD4964F006ADB17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A924731AD4964F006ADB17 /* Images.xcassets */; };
 		A9A924771AD4964F006ADB17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A924751AD4964F006ADB17 /* LaunchScreen.xib */; };
 		A9A924831AD4964F006ADB17 /* Favorite_PlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A924821AD4964F006ADB17 /* Favorite_PlacesTests.swift */; };
+		A9A9248D1AD4A005006ADB17 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A9248C1AD4A005006ADB17 /* TableViewController.swift */; };
+		A9A9248F1AD4A1E8006ADB17 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A9248E1AD4A1E8006ADB17 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		A9A9247C1AD4964F006ADB17 /* Favorite PlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Favorite PlacesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A924811AD4964F006ADB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A924821AD4964F006ADB17 /* Favorite_PlacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite_PlacesTests.swift; sourceTree = "<group>"; };
+		A9A9248C1AD4A005006ADB17 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
+		A9A9248E1AD4A1E8006ADB17 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A9248F1AD4A1E8006ADB17 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,7 @@
 		A9A9245E1AD4964F006ADB17 = {
 			isa = PBXGroup;
 			children = (
+				A9A9248E1AD4A1E8006ADB17 /* CoreLocation.framework */,
 				A9A924691AD4964F006ADB17 /* Favorite Places */,
 				A9A9247F1AD4964F006ADB17 /* Favorite PlacesTests */,
 				A9A924681AD4964F006ADB17 /* Products */,
@@ -79,6 +85,7 @@
 			children = (
 				A9A9246C1AD4964F006ADB17 /* AppDelegate.swift */,
 				A9A9246E1AD4964F006ADB17 /* ViewController.swift */,
+				A9A9248C1AD4A005006ADB17 /* TableViewController.swift */,
 				A9A924701AD4964F006ADB17 /* Main.storyboard */,
 				A9A924731AD4964F006ADB17 /* Images.xcassets */,
 				A9A924751AD4964F006ADB17 /* LaunchScreen.xib */,
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A9246F1AD4964F006ADB17 /* ViewController.swift in Sources */,
+				A9A9248D1AD4A005006ADB17 /* TableViewController.swift in Sources */,
 				A9A9246D1AD4964F006ADB17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Favorite Places/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Favorite Places/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +415,7 @@
 				A9A924881AD4964F006ADB17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9A924891AD4964F006ADB17 /* Build configuration list for PBXNativeTarget "Favorite PlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +424,7 @@
 				A9A9248B1AD4964F006ADB17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
